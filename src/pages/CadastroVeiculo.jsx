@@ -18,7 +18,7 @@ export default function CadastroVeiculo({ adicionarVeiculo }) {
       status,
     };
 
-    adicionarVeiculo(novoVeiculo);
+    adicionarVeiculo(novoVeiculo); // ✅ Agora está correto!
     navigate("/dashboard"); // Redireciona após cadastro
   };
 
