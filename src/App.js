@@ -1,32 +1,19 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import CadastroVeiculo from "./pages/CadastroVeiculo";
+import DashboardPage from "./pages/DashboardPage";
+import Raster from "./Raster"; // 🔥 Importação correta
 
 function App() {
-  const [veiculos, setVeiculos] = useState([
-    { id: 1, modelo: "Honda CG 160", placa: "ABC-1234", status: "Em movimento" },
-    { id: 2, modelo: "Yamaha Fazer 250", placa: "DEF-5678", status: "Parado" },
-    { id: 3, modelo: "Fiat Uno", placa: "GHI-9012", status: "Em movimento" },
-  ]);
-
-  const adicionarVeiculo = (novoVeiculo) => {
-    setVeiculos((prevVeiculos) => [...prevVeiculos, novoVeiculo]); // ✅ Atualiza corretamente a lista
-  };
-
   return (
-    <Router>
+    <Router> {/* 🔥 Adicionei o BrowserRouter para envolver as rotas */}
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route 
-          path="/dashboard" 
-          element={<Dashboard veiculos={veiculos} adicionarVeiculo={adicionarVeiculo} />} 
-        />
-        <Route 
-          path="/cadastro" 
-          element={<CadastroVeiculo adicionarVeiculo={adicionarVeiculo} />} 
-        />
+        <Route path="/" element={<Raster />} /> {/* Raster como página inicial */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard-page" element={<DashboardPage />} />
+        <Route path="/Raster" element={<Raster />} />
       </Routes>
     </Router>
   );
