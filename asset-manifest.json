@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Raster/static/css/main.fafc1af5.css",
+    "main.js": "/Raster/static/js/main.14b634cf.js",
+    "static/js/453.0cdbd17a.chunk.js": "/Raster/static/js/453.0cdbd17a.chunk.js",
+    "index.html": "/Raster/index.html",
+    "main.fafc1af5.css.map": "/Raster/static/css/main.fafc1af5.css.map",
+    "main.14b634cf.js.map": "/Raster/static/js/main.14b634cf.js.map",
+    "453.0cdbd17a.chunk.js.map": "/Raster/static/js/453.0cdbd17a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fafc1af5.css",
+    "static/js/main.14b634cf.js"
+  ]
+}
