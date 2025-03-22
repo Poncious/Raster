@@ -13,7 +13,7 @@ const center = {
 
 function MapaRastreamento() {
   return (
-    <LoadScript googleMapsApiKey= "AIzaSyD4fmQ2D5CRq8yMJ__696M4XEwhZUyNOMk">
+    <LoadScript googleMapsApiKey= "AIzaSyBISuV56lAvZM6xrocLrG6JJpCC3qPdOY0">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
         {/* Adicione os veículos aqui como marcadores */}
         <Marker position={{ lat: -23.55052, lng: -46.633308 }} label="Carro A" />
